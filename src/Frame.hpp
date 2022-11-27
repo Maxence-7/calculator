@@ -1,5 +1,5 @@
-#ifndef DEF_FENETRE
-#define DEF_FENETRE
+#ifndef DEF_FRAME
+#define DEF_FRAME
 
 #include <string>
 #include <vector>

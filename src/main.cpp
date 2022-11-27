@@ -4,7 +4,7 @@
 
 int main(int argc, char* argv[]) {
     Gtk::Main app(argc, argv);
-    Frame fenetre;
-    Gtk::Main::run(fenetre);
+    Frame frame;
+    Gtk::Main::run(frame);
     return 0;
 }
