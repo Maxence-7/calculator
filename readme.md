@@ -1,5 +1,3 @@
-# Calculator
-
 Simple calculator with simple UI using GTKMM
 
 ## Dependencies
