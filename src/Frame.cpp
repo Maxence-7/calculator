@@ -24,9 +24,13 @@ Frame::Frame() {
     }
     entryField.show();
     entryField.set_text("");
+    entryField.set_editable(false);
+    author.show();
+    author.set_text("Made by Maxence Leguéry");
     memText.show();
     gridB.attach_next_to(entryField,*buttons[0],Gtk::PositionType::POS_TOP,4,1);
     gridB.attach_next_to(memText,entryField,Gtk::PositionType::POS_TOP,4,1);
+    gridB.attach_next_to(author,*buttons[12],Gtk::PositionType::POS_BOTTOM,4,1);
     gridB.show();
 }
 
@@ -38,7 +42,7 @@ Frame::~Frame() {
 }
 
 void Frame::on_button_numbered(const Glib::ustring& data) {
-    std::cout << data << " was pressed" << std::endl;
+    //std::cout << data << " was pressed" << std::endl;
     //entryField.set_text(data);
     switch (data.data()[0]) {
     case '=':
