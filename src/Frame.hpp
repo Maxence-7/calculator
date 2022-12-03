@@ -1,7 +1,6 @@
 #ifndef DEF_FRAME
 #define DEF_FRAME
 
-#include <string>
 #include <vector>
 
 #include <gtkmm/button.h>
@@ -18,11 +17,14 @@ class Frame : public Gtk::Window {
     
     private :
         double numberMemory = 0;
-        char operationMemory;
+        bool decimal = false;
+        bool isMem = false;
+        char operationMemory = '?';
         Gtk::Grid gridB;
         char symbols[16] = {'7','8','9','+','4','5','6','-','1','2','3','*','0','.','=','/'};
         std::vector<Gtk::Button*> buttons;
         Gtk::Entry entryField;
+        Gtk::Label memText;
 };
 
 #endif
